@@ -1,6 +1,8 @@
 import numpy as np
 
-raw = np.fromfile("cochannel.sigmf-data", dtype=np.float32)
+import os
+data_path = "data/cochannel.sigmf-data" if os.path.exists("data/cochannel.sigmf-data") else "cochannel.sigmf-data"
+raw = np.fromfile(data_path, dtype=np.float32)
 x = raw[0::2] + 1j*raw[1::2]
 
 phase = np.angle(np.mean(x**2)) / 2.0

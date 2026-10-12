@@ -1,0 +1,15 @@
+{
+  "global": {
+    "core:datatype": "cf32_le",
+    "core:sample_rate": 200000.0,
+    "core:version": "1.0.0",
+    "core:description": "Passive recording, single antenna, 200 kHz span. Two emitters are present on the same carrier."
+  },
+  "captures": [
+    {
+      "core:sample_start": 0,
+      "core:frequency": 433050000.0
+    }
+  ],
+  "annotations": []
+}
